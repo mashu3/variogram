@@ -20,7 +20,7 @@ source_arr = np.genfromtxt(file_name, delimiter=',', skip_header=1)
 # セミバリオグラムを計算する
 def variogram(xyv_array):
 	xy_dist = squareform(pdist(xyv_array[:, 0:2], 'euclidean'))
-	s_vario = squareform(pdist(xyv_array[:, 2:3], 'euclidean') / 2)
+	s_vario = squareform(pdist(xyv_array[:, 2:3], 'euclidean')**2 / 2)
 	return [xy_dist, s_vario]
 z_vario = variogram(source_arr)
 
