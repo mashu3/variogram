@@ -1,2 +1,3 @@
-# variogram
-セミバリオグラムを計算するPythonプログラムです
+# Variogram
+## vario.py
+等方性セミバリオグラムを計算するPythonプログラムです
